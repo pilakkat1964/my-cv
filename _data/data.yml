@@ -131,9 +131,9 @@ certifications:
         Awarded for the paper "Reconfigurable Signal Processing and hardware Architecture for Broadband Wireless Communications" in the Journal on Wireless Communications and Networking, Volume 2005.
 
 projects:
-  title: Key Projects @ A*STAR
+  title: Key Projects
   intro: |
-    Selected projects from A*STAR and industry engagements, focusing on SDR, IIoT, and secure communications.
+    Selected projects and industry engagements, focusing on SDR, IIoT, wired, wireline and secure communications.
   assignments:
     - title: 5G for Advanced Manufacturing & Smart Urban Systems
       link:
@@ -155,10 +155,6 @@ projects:
       link:
       tagline: "Led team of 16 engineers (I2R, with Defense collaborator) to develop multi-mode terminal (WCDMA + 802.11a). Employed MDD/MDA with Rhapsody UML2 and Telelogic SDT."
       
-  title: Key Projects @ Motorola
-  intro: |
-    Selected projects from Motorola, CRTC/GSD an in-house competency center for high maturity software development.
-  assignments:
     - title: Cdma2000 1x Trial System
       link:
       tagline: "Part of the 3 member, corporate-wide System Architecture for Motorola's Cdma2000-1X technology demonstrator and for trial with Sprint PCS Inc. Coordinated a global team to define system architecture and feature set; deputed to Cellular Infrastructure Group headquarters at Arlington Heights, Chicago."
