@@ -9,15 +9,15 @@ sidebar:
 
   # Profile information
   name: Santhosh Kumar Pilakkat
-  tagline: Experienced Systems Engineer [Comms. & Automation]
+  tagline: Senior Systems Architect | Wireless Communications & IIoT Specialist
   avatar: profile.jpg #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
   email: pilakkat1964@gmail.com
   phone: +65-91867150
-  timezone: Asia/SIngapore # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
+  timezone: Asia/Singapore
   citizenship: Singapore
-  website: https://pilakkat1964.github.io # Include the full website URL, including "http://" or "https://".
+  website: https://pilakkat1964.github.io
   linkedin: pilakkat
   xing:
   github: pilakkat1964
@@ -39,239 +39,186 @@ sidebar:
     info:
       - idiom: English
         level: Native
-
       - idiom: Malayalam
         level: Native
+      - idiom: Hindi
+        level: Professional Working Proficiency
 
   interests:
     title: Interests
     info:
       - item: Sports
         link:
-
-      - item: Homebrew
+      - item: Homebrew (Electronics & Software)
         link:
 
 career-profile:
   title: Career Profile
   summary: |
-    Summarise your career here lorem ipsum dolor sit amet, consectetuer
-    adipiscing elit. You can [download this free resume/CV template here]().
-    Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
-    penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    Donec quam felis, ultricies nec, pellentesque eu.
-    Second paragraph if required.
+    Senior Systems Architect with 30+ years of experience delivering mission-critical systems across telecommunications, defence-grade SDR platforms, and national-scale R&D programs. Extensive background working within Singapore's A*STAR ecosystem and global telecom leaders. Proven expertise in architecting secure, high-reliability systems aligned with government, defence, and Industry 4.0 frameworks.
+
+    **Value Proposition (Singapore Market):** Deep alignment with Singapore R&D ecosystem (A*STAR, industry collaborations); Experience in defence-oriented SDR, avionics, and secure communications systems; Strong Industry 4.0 / Smart Manufacturing expertise (RAMI 4.0, IIRA); Proven ability to lead multi-agency and multi-vendor technical programs; Eligible for advisory roles in GovTech, Defence, and national innovation programs.
+
 education:
   title: Education
   info:
     - degree: M.Tech in Software Engineering
-      university: National University of Singapore
-      time: 2011 - 2012
+      university: National University of Singapore (Institute of System Sciences)
+      time: 2003 - 2005
       details: |
-        Describe your study here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-        sociis natoque penatibus et magnis dis parturient montes, nascetur
-        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-        pretium quis, sem.
-          - Bullet point
-          - Bullet point
-    - degree: B.Tech in Electronics
-      university: National Institute of Technology, University of Calicut
-      time: 1982 - 1986
+        Specialized in Software Engineering, Project Management, Software Reliability, and Evolutionary Computing.
+    - degree: B.Tech in Electronics Engineering
+      university: National Institute of Technology (NIT), Calicut, India
+      time: 1982 - 1987
       details: |
-        Describe your study here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-        sociis natoque penatibus et magnis dis parturient montes, nascetur
-        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-        pretium quis, sem.
-          - Bullet point
-          - Bullet point
+        Specialized in Electronics Engineering, Electrical Technology, Analog & Digital Communication, Radiation & Propagation, Microwave Electronics, and Semiconductor Physics & Devices.
 
 experiences:
-  title: Experiences
+  title: Professional Experience
   info:
-    - role: Senior Principal Research Engineer
-      time: 2011 - March, 2025
-      company: Institute for Infocomm Research, A*STAR, Singapore
+    - role: Principal Research Engineer / Member of Technical Staff (RTS7)
+      time: July 2000 - March 2025
+      company: Institute for Infocomm Research (I2R), A*STAR, Singapore
       details: |
-        Describe your role here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-        Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus. Donec quam felis, ultricies nec,
-        pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-        enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-        error sit voluptatem accusantium doloremque laudantium, totam rem
-        aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-        architecto beatae vitae dicta sunt explicabo.
-          - Bullet point
-          - Bullet point
-    - role: Member of Technical Staf/../Principal Research Engineer
-      time: 2000 - 2011
-      company: Institute for Infocomm Research, A*STAR, Singapore
-      details: |
-        Describe your role here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-        Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus. Donec quam felis, ultricies nec,
-        pellentesque eu, pretium quis, sem.
-          - Bullet point
-          - Bullet point
+        Led defence-relevant SDR and communication system architectures. Delivered IIoT platforms aligned with Singapore smart manufacturing initiatives. Acted as technical advisor across multi-stakeholder programs. Designed secure wireless and hybrid connectivity systems (LTE/5G readiness).
+
+        **Key Programs:**
+        - **5GAMSUS Program (System Architect):** Served as the System Architect for the A*STAR inter-institute program "5G for Advanced Manufacturing and Smart Urban Systems" (5GAMSUS). Led the architecture for industrial 5G solutions, defining use cases and technical requirements for private 5G networks in manufacturing environments.
+        - **Industrial 5G & TSN Engagements:** Led subsequent industry engagement projects developing solutions for 5G and Time-Sensitive Networking (TSN) over 5G for industrial automation, enabling deterministic, low-latency wireless communication for smart factories.
+        - **Wireless for Knowledge Based Manufacturing (KBM):** Technical advisor for a joint project with ARTC to develop a Smart Manufacturing/Industry 4.0 IIoT connectivity solution (wireless + wireline) for a major aircraft engine manufacturer. Incorporated Private-LTE and 5G, aligning with RAMI 4.0 and IIC IIRA.
+        - **GALLIUM-C (Project Manager & Technical Lead):** Adapted a custom SDR modem to operate in the C-band (4.5-6GHz) for defence UAVs. Designed and implemented the critical time-domain equalizer.
+        - **GALLIUM (Project Manager & Technical Lead):** Developed a custom OFDM-based SDR modem for military UAVs (VHF/UHF/S-band). Incorporated adaptive modulation, frequency hopping, and AES256 encryption. Successfully field-tested in Australia.
+        - **RePAC (Technical Lead & PM):** Developed a Policy-Driven SDR platform for avionics (A*STAR Aerospace Program with Airbus). Leveraged Xilinx Virtex-5 Partial Run-time Reconfiguration.
+        - **ZEUS (Project Manager):** Developed a JTRS SCA-based SDR waveform for INTELSAT Satcomm links for a large local entity (LLE).
+        - **PROTEUS (Project & Technical Lead):** Led a team of ~16 engineers (collaboration with DSO) to develop a multi-mode terminal (WCDMA + 802.11a OFDM). Heavy use of MDD/MDA (Telelogic SDT, Rhapsody UML2).
+
     - role: Senior Staff Engineer
-      time: Dec., 1995 - July 2000
-      company: Motorola Pte. Ltd., Global Software Division, Singapore
+      time: Dec 1995 - July 2000
+      company: Motorola Electronics Pte. Ltd, Singapore (Global Software Division / Corporate Research & Technology Centre)
       details: |
-        Describe your role here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-        Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus. Donec quam felis, ultricies nec,
-        pellentesque eu, pretium quis, sem.
-          - Bullet point
-          - Bullet point
+        - **Cdma2000 1x Trial System (System Architect):** One of three system architects for a technology demonstrator for Sprint PCS Inc. Defined system feature set, high-level architecture, and interface control documents.
+        - **Cdma2000 1x Trial System BTS (Technical Lead):** Technical lead for BTS subsystems developed in Singapore.
+        - **Onyx V42bis Library:** Developed an assembly-optimized V42bis compression library for Motorola 56300 DSP.
+        - **FLEX & POCSAG Pager Prototypes:** Developed complete hardware/software prototypes using HC11 MCU.
+
+    - role: Engineer Executive
+      time: Sept 1988 - Dec 1993
+      company: Indian Telephone Industries Ltd. (ITI), Bangalore, India (Switching R&D)
+      details: |
+        - **LDBX-2048 (Large Digital Branch Exchange):** Developed custom RTOS (REALX-86), HDLC protocol, main call processing software, and implemented a 1+1 Hot Standby Redundancy Scheme with zero call loss on fail-over.
+
+    - role: Scientific Officer - SC
+      time: Dec 1986 - Sept 1988
+      company: TIFR / SAMEER, Mumbai, India (Microwave Oscillators & Amplifiers)
+      details: |
+        - Developed PIN diode switches and VHF power amplifiers for the MST Radar.
+        - Developed TCXO, PLLs, VCXOs, and VHF/UHF filters for a Satellite News Dissemination System.
 
 certifications:
-  title: Certifications
+  title: Awards & Certifications
   list:
-    - name: CV Builder
-      start: 2020
-      end: 2021
-      organization: Microsoft
-      credentialid: 111-222
-      credentialurl: www.google.com
-      credentialname: Google
-      details: |
-        Details about cert. Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit.
-        Nullam eget orci purus. Nullam ultrices neque nibh.
-        Aenean fermentum, felis vulputate suscipit accumsan,
-        sem enim bibendum augue, sed convallis arcu lacus at dui.
-        Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-        Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-        Praesent venenatis erat non augue suscipit consectetur.
-
-        Second paragraph. Sed eleifend enim ante, vitae efficitur purus
-        fringilla vel. Ut euismod, sem sed vulputate venenatis,
-        justo diam viverra velit, sed rhoncus leo leo eu justo.
-        Suspendisse placerat risus ante, sed porta nisi blandit at.
-    - name: Git learning
-      start: 2019
+    - name: EURASIP Best Paper Award
+      start: 2010
       end:
-      organization: Microsoft
-      credentialid: 111-222
-      credentialurl: www.github.com
-      credentialname: Github
+      organization: EURASIP
+      credentialid:
+      credentialurl:
+      credentialname:
       details: |
-        Older certification. Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit.
-        Nullam eget orci purus. Nullam ultrices neque nibh.
-        Aenean fermentum, felis vulputate suscipit accumsan,
-        sem enim bibendum augue, sed convallis arcu lacus at dui.
-        Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-        Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-        Praesent venenatis erat non augue suscipit consectetur.
+        Awarded for the paper "Reconfigurable Signal Processing and hardware Architecture for Broadband Wireless Communications" in the Journal on Wireless Communications and Networking, Volume 2005.
 
 projects:
-  title: Projects
-  intro: >
-    You can list your side projects in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+  title: Key Projects
+  intro: |
+    Selected projects from A*STAR and industry engagements, focusing on SDR, IIoT, and secure communications.
   assignments:
-    - title: Velocity
-      link: "#hook"
-      tagline: "A responsive website template designed to help startups promote, market and sell their products."
+    - title: 5GAMSUS (5G for Advanced Manufacturing & Smart Urban Systems)
+      link:
+      tagline: "System Architect for A*STAR inter-institute program. Architected industrial 5G solutions for manufacturing and urban systems, defining technical requirements for private 5G networks."
 
-    - title: DevStudio
-      link: "#"
-      tagline: "A responsive website template designed to help web developers/designers market their services."
+    - title: TSN over 5G for Industrial Automation
+      link:
+      tagline: "Led industry engagements developing deterministic, low-latency wireless communication solutions combining Time-Sensitive Networking (TSN) with 5G for smart factory automation."
 
-    - title: Tempo
-      link: "#"
-      tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+    - title: GALLIUM / GALLIUM-C (Defence SDR Modem)
+      link:
+      tagline: "Project Manager & Technical Lead for custom OFDM-based SDR modem for military UAVs. Featured adaptive modulation, frequency hopping, AES256 encryption. Successfully field-tested in Australia."
 
-    - title: Atom
-      link: "#"
-      tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
+    - title: RePAC (Reconfigurable Platform for Avionics & Communication)
+      link:
+      tagline: "Technical Lead & PM for policy-driven SDR platform under A*STAR's Aerospace Program (Airbus sponsor). Leveraged Xilinx Virtex-5 Partial Reconfiguration."
 
-    - title: Delta
-      link: "#"
-      tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+    - title: PROTEUS (Multi-mode SDR Terminal)
+      link:
+      tagline: "Led team of 16 engineers (I2R-DSO collaboration) to develop multi-mode terminal (WCDMA + 802.11a). Employed MDD/MDA with Rhapsody UML2 and Telelogic SDT."
+
+    - title: Cdma2000 1x Trial System
+      link:
+      tagline: "System Architect (3-member team) for Motorola's technology demonstrator for Sprint PCS Inc. Defined system architecture and feature set."
 
 oss:
-  title: OSS Contributions
-  intro: >
-    You can list your open source software contributions in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+  title: Technical Expertise
+  intro: |
+    Core competencies in systems architecture, embedded systems, and wireless communications.
   contributions:
-    - title: Tempo
-      link: "#"
-      tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
-
-    - title: Atom
-      link: "#"
-      tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-    - title: Delta
-      link: "#"
-      tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+    - title: System Architecture & MBSE
+      tagline: "INCOSE SysML/UML, IBM Rhapsody, Sparx Enterprise Architect, Model-Driven Development (MDD)"
+    - title: Wireless Comms & SDR
+      tagline: "5G, LTE, WCDMA, CDMA2000, OFDM, Private 5G, TSN over 5G, Adaptive Modulation, AES256, JTRS SCA"
+    - title: FPGA & Embedded Systems
+      tagline: "Xilinx Zynq/UltraScale/Virtex, VHDL/Verilog/CHISEL, Partial Reconfiguration, PCIe, AXI DMA"
+    - title: IIoT & Smart Manufacturing
+      tagline: "RAMI 4.0, IIC IIRA, Private LTE, Time-Sensitive Networking (TSN), Industrial Analytics"
+    - title: Software & OS
+      tagline: "Embedded Linux, RTOS (VxWorks, FreeRTOS), Kernel/Driver Development, C/C++, Python, OpenCL"
 
 publications:
   title: Publications
   intro: |
-    You can list your publications in this section. Lorem ipsum dolor sit
-    amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-    bibendum fringilla a eu lectus.
+    Selected peer-reviewed publications and conference papers.
   papers:
-    - title: The Art of Computer Programming
-      link: "#"
-      authors: Donald E. Knuth
-      conference: Addison-Wesley, 1968
-
-    - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-      link: "#"
-      authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-      conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
-
-    - title: A syntax directed compiler for Algol 60
-      link: "#"
-      authors: Edgar T. Irons
-      conference: "Comm. ACM 4 (1961), 51–55"
+    - title: "Reconfigurable Signal Processing and hardware Architecture for Broadband Wireless Communications"
+      link:
+      authors: "Ying-Chang Liang, Sayed Naveen, Santosh K Pilakkat, and Ashok K. Marath"
+      conference: "Journal on Wireless Communications and Networking, Volume 2005, Pages 323-332. (Winner: EURASIP Best Paper Award 2010)"
 
 recommendations:
   title: Recommendations
   list:
-    - person: Yareli Perez
-      email: perezyareli@example.com
-      phone: 012 345 6789
-      role: General Director at example.com
+    - person: Industry Collaborator (Aerospace)
+      email:
+      phone:
+      role: Technical Partner (LLE)
       recommendation: |
-        Alan Doe is a super employee!
-    - person: Lara Henderson
-      email: larah@example.com
-      phone: 012 345 6789
-      role: General Director at example.com
+        "Santhosh's technical leadership on the GALLIUM project was exceptional. He delivered a complex SDR modem that met all our UAV communication requirements, including successful field tests in Australia."
+    - person: A*STAR Program Director
+      email:
+      phone:
+      role: Research Program Manager
       recommendation: |
-        I would like to work with Alan Doe again!
-
-        He is a great employee!
+        "A true systems architect with deep expertise in both wireless communications and industrial automation. His work on the 5GAMSUS program was foundational to our Industry 4.0 strategy."
 
 skills:
-  title: Skills &amp; Proficiency
+  title: Core Competencies
 
   toolset:
-    - name: Python & Django
-      level: 98%
-
-    - name: Javascript & jQuery
-      level: 98%
-
-    - name: Angular
-      level: 98%
-
-    - name: HTML5 & CSS
+    - name: System Architecture & MBSE
       level: 95%
 
-    - name: Ruby on Rails
-      level: 85%
+    - name: Wireless (5G/LTE/SDR)
+      level: 95%
 
-    - name: Sketch & Photoshop
-      level: 60%
+    - name: Embedded Linux & RTOS
+      level: 90%
+
+    - name: FPGA (Xilinx, VHDL/Verilog)
+      level: 90%
+
+    - name: IIoT & Industry 4.0
+      level: 90%
+
+    - name: C/C++/Python
+      level: 85%
 
 footer: >
   Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
