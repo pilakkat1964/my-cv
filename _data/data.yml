@@ -17,7 +17,7 @@ sidebar:
   phone: +65-91867150
   timezone: Asia/Singapore
   citizenship: Singapore
-  website: https://pilakkat1964.github.io
+  website: https://pilakkat.mywire.org
   linkedin: pilakkat
   xing:
   github: pilakkat1964
@@ -76,21 +76,21 @@ education:
 experiences:
   title: Professional Experience
   info:
-    - role: Principal Research Engineer / Member of Technical Staff (RTS7)
+    - role: Senior Principal Research Engineer (RTS7)
       time: July 2000 - March 2025
       company: Institute for Infocomm Research (I2R), A*STAR, Singapore
       details: |
         Led defence-relevant SDR and communication system architectures. Delivered IIoT platforms aligned with Singapore smart manufacturing initiatives. Acted as technical advisor across multi-stakeholder programs. Designed secure wireless and hybrid connectivity systems (LTE/5G readiness).
 
         **Key Programs:**
-        - **5GAMSUS Program (System Architect):** Served as the System Architect for the A*STAR inter-institute program "5G for Advanced Manufacturing and Smart Urban Systems" (5GAMSUS). Led the architecture for industrial 5G solutions, defining use cases and technical requirements for private 5G networks in manufacturing environments.
+        - **5G for Advanced Manufacturing & Smart Urban Systems Program (System Architect):** Served as the System Architect for the A*STAR inter-institute program "5G for Advanced Manufacturing and Smart Urban Systems" (5GAMSUS). Led the architecture for industrial 5G solutions, defining use cases and technical requirements for private 5G networks in manufacturing environments.
         - **Industrial 5G & TSN Engagements:** Led subsequent industry engagement projects developing solutions for 5G and Time-Sensitive Networking (TSN) over 5G for industrial automation, enabling deterministic, low-latency wireless communication for smart factories.
         - **Wireless for Knowledge Based Manufacturing (KBM):** Technical advisor for a joint project with ARTC to develop a Smart Manufacturing/Industry 4.0 IIoT connectivity solution (wireless + wireline) for a major aircraft engine manufacturer. Incorporated Private-LTE and 5G, aligning with RAMI 4.0 and IIC IIRA.
-        - **GALLIUM-C (Project Manager & Technical Lead):** Adapted a custom SDR modem to operate in the C-band (4.5-6GHz) for defence UAVs. Designed and implemented the critical time-domain equalizer.
-        - **GALLIUM (Project Manager & Technical Lead):** Developed a custom OFDM-based SDR modem for military UAVs (VHF/UHF/S-band). Incorporated adaptive modulation, frequency hopping, and AES256 encryption. Successfully field-tested in Australia.
-        - **RePAC (Technical Lead & PM):** Developed a Policy-Driven SDR platform for avionics (A*STAR Aerospace Program with Airbus). Leveraged Xilinx Virtex-5 Partial Run-time Reconfiguration.
-        - **ZEUS (Project Manager):** Developed a JTRS SCA-based SDR waveform for INTELSAT Satcomm links for a large local entity (LLE).
-        - **PROTEUS (Project & Technical Lead):** Led a team of ~16 engineers (collaboration with DSO) to develop a multi-mode terminal (WCDMA + 802.11a OFDM). Heavy use of MDD/MDA (Telelogic SDT, Rhapsody UML2).
+        - **SDR based C-band Data Link for Tactical UAVs (Project Manager & Technical Lead):** Adapted a custom SDR modem to operate in the C-band (4.5-6GHz) for defence UAVs. Designed and implemented the critical time-domain equalizer.
+        - **SDR based Data Link for Tactical UAVs  (Project MaDnager & Technical Lead):** Developed a custom OFDM-based SDR modem for military UAVs (VHF/UHF/S-band). Incorporated adaptive modulation, frequency hopping, and AES256 encryption. Successfully field-tested in Australia.
+        - **Reconfigurable Platform for Avionics & Communication (Technical Lead & PM):** Developed a Policy-Driven SDR platform for avionics (A*STAR Aerospace Program with Airbus). Leveraged Xilinx Virtex-5 Partial Run-time Reconfiguration.
+        - **SDR based Multi-channel Intelsat Modem (Project Manager):** Developed a JTRS SCA-based SDR waveform for INTELSAT Satcomm links for a large local entity (LLE).
+        - **Multi-mode SDR Terminal (Project & Technical Lead):** Led a team of ~16 engineers (collaboration with DSO) to develop a multi-mode terminal (WCDMA + 802.11a OFDM). Heavy use of MDD/MDA (Telelogic SDT, Rhapsody UML2).
 
     - role: Senior Staff Engineer
       time: Dec 1995 - July 2000
@@ -132,7 +132,7 @@ projects:
   intro: |
     Selected projects from A*STAR and industry engagements, focusing on SDR, IIoT, and secure communications.
   assignments:
-    - title: 5GAMSUS (5G for Advanced Manufacturing & Smart Urban Systems)
+    - title: 5G for Advanced Manufacturing & Smart Urban Systems
       link:
       tagline: "System Architect for A*STAR inter-institute program. Architected industrial 5G solutions for manufacturing and urban systems, defining technical requirements for private 5G networks."
 
@@ -140,21 +140,21 @@ projects:
       link:
       tagline: "Led industry engagements developing deterministic, low-latency wireless communication solutions combining Time-Sensitive Networking (TSN) with 5G for smart factory automation."
 
-    - title: GALLIUM / GALLIUM-C (Defence SDR Modem)
+    - title: Defence SDR Modem for UAV
       link:
       tagline: "Project Manager & Technical Lead for custom OFDM-based SDR modem for military UAVs. Featured adaptive modulation, frequency hopping, AES256 encryption. Successfully field-tested in Australia."
 
-    - title: RePAC (Reconfigurable Platform for Avionics & Communication)
+    - title: Reconfigurable Platform for Avionics & Communication
       link:
-      tagline: "Technical Lead & PM for policy-driven SDR platform under A*STAR's Aerospace Program (Airbus sponsor). Leveraged Xilinx Virtex-5 Partial Reconfiguration."
+      tagline: "Technical Lead & PM for policy-driven SDR platform under A*STAR's Aerospace Program (Airbus sponsored). Leveraged Xilinx Virtex-5 Partial Reconfiguration."
 
-    - title: PROTEUS (Multi-mode SDR Terminal)
+    - title: Multi-mode SDR Terminal
       link:
-      tagline: "Led team of 16 engineers (I2R-DSO collaboration) to develop multi-mode terminal (WCDMA + 802.11a). Employed MDD/MDA with Rhapsody UML2 and Telelogic SDT."
+      tagline: "Led team of 16 engineers (I2R, with Defense collaborator) to develop multi-mode terminal (WCDMA + 802.11a). Employed MDD/MDA with Rhapsody UML2 and Telelogic SDT."
 
     - title: Cdma2000 1x Trial System
       link:
-      tagline: "System Architect (3-member team) for Motorola's technology demonstrator for Sprint PCS Inc. Defined system architecture and feature set."
+      tagline: "Part of the 3 member, corporate-wide System Architecture for Motorola's Cdma2000-1X technology demonstrator and for trial with Sprint PCS Inc. Coordinated a global team to define system architecture and feature set at coorporate headquarters."
 
 oss:
   title: Technical Expertise
