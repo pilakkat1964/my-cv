@@ -97,13 +97,13 @@ experiences:
         - **Onyx V42bis Library:** Developed an assembly-optimized V42bis compression library for Motorola 56300 DSP.
         - **FLEX & POCSAG Pager Prototypes:** Developed complete hardware/software prototypes using HC11 MCU.
         - **Software Quality & Systems Engineering:** As part of the first CMMI Level 5 qualified team in Singapore, developed deep understanding of the Software development lifecycle at the highest maturity level. Developed comprehensive test automation solution for automated test execution and coverage analysis for the hand optimised DSP assembly libraries.
-        
+
     - role: R&D Engineer
       time: Dec 1993 - Dec 1995
       company: PCI Pte. Ltd., Singapore
       details: |
-        - **GSM Handset Development:** As part of software team, developed SIM handling software subsystem for Singapore's first GSM R&D project. As part of the Systems Engineering team, working with ADI & TTP Ltd., helped in fleshing out the design and testing approaches for the handset prototype. Developed a POCASAG page virtual platform based on Visual Basic to help accelerate the development of pager product line in a parallel effort. 
-        
+        - **GSM Handset Development:** As part of software team, developed SIM handling software subsystem for Singapore's first GSM R&D project. As part of the Systems Engineering team, working with ADI & TTP Ltd., helped in fleshing out the design and testing approaches for the handset prototype. Developed a POCASAG page virtual platform based on Visual Basic to help accelerate the development of pager product line in a parallel effort.
+
     - role: Engineer Executive
       time: Sept 1988 - Dec 1993
       company: Indian Telephone Industries Ltd. (ITI), Bangalore, India (Switching R&D)
@@ -154,7 +154,7 @@ projects:
     - title: Multi-mode SDR Terminal
       link:
       tagline: "Led team of 16 engineers (I2R, with Defense collaborator) to develop multi-mode terminal (WCDMA + 802.11a). Employed MDD/MDA with Rhapsody UML2 and Telelogic SDT."
-      
+
     - title: Cdma2000 1x Trial System
       link:
       tagline: "Part of the 3 member, corporate-wide System Architecture for Motorola's Cdma2000-1X technology demonstrator and for trial with Sprint PCS Inc. Coordinated a global team to define system architecture and feature set; deputed to Cellular Infrastructure Group headquarters at Arlington Heights, Chicago."
@@ -182,7 +182,7 @@ publications:
   papers:
     - title: "Reconfigurable Signal Processing and hardware Architecture for Broadband Wireless Communications"
       link:
-      authors: "Ying-Chang Liang, Sayed Naveen, Santosh K Pilakkat, and Ashok K. Marath"
+      authors: "Ying-Chang Liang, Sayed Naveen, Santhosh K Pilakkat, and Ashok K. Marath"
       conference: "Journal on Wireless Communications and Networking, Volume 2005, Pages 323-332. (Winner: EURASIP Best Paper Award 2010)"
 
 recommendations:
