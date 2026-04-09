@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "3.2.3"
+ruby "3.4.9"
 
 # gem "rails"
 gem "jekyll", "~> 4.3.0"
