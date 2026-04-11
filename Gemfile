@@ -6,6 +6,7 @@ ruby "3.4.9"
 gem "jekyll", "~> 4.3.0"
 gem 'webrick'
 gem 'csv'
+gem 'base64'
 
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.17"
