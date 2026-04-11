@@ -144,25 +144,55 @@ certifications:
       details: |
         Awarded for the paper "Reconfigurable Signal Processing and hardware Architecture for Broadband Wireless Communications" in the Journal on Wireless Communications and Networking, Volume 2005.
 
-    - name: Kotlin for Beginners - Learn Programming With Kotlin
-      start: 2024
-      end:
+    - name: Rust - The Complete Developer's Guide
+      start: 2025
+      end: May 31, 2025
       organization: Udemy
-      credentialid:
-      credentialurl:
-      credentialname:
+      credentialid: UC-6e52b3ff-a598-4a42-bccd-28ce8676676b
+      credentialurl: https://ude.my/UC-6e52b3ff-a598-4a42-bccd-28ce8676676b
+      credentialname: Udemy Certificate
       details: |
-        Completed comprehensive course on Kotlin programming language, covering modern language features and best practices for mobile and backend application development.
+        Comprehensive course on Rust programming language and systems development. Covers ownership, borrowing, pattern matching, and advanced language features. (10 total hours). Instructor: Stephen Grider.
+
+    - name: Kotlin for Beginners - Learn Programming With Kotlin
+      start: 2025
+      end: Dec 2, 2025
+      organization: Udemy
+      credentialid: UC-e2351a67-a5c4-4464-ab9f-12378a9b859e
+      credentialurl: https://ude.my/UC-e2351a67-a5c4-4464-ab9f-12378a9b859e
+      credentialname: Udemy Certificate
+      details: |
+        Comprehensive course on Kotlin programming language, covering modern language features and best practices for mobile and backend application development. (6.5 total hours). Instructor: Peter Sommerhoff.
+
+    - name: Visual Embedded Android (AOSP) with Drawings and Practice
+      start: 2025
+      end: Nov 21, 2025
+      organization: Udemy
+      credentialid: UC-97e3426e-fa7c-4c72-b2f7-069012773587
+      credentialurl: https://ude.my/UC-97e3426e-fa7c-4c72-b2f7-069012773587
+      credentialname: Udemy Certificate
+      details: |
+        Practical course on Android embedded systems development (AOSP - Android Open Source Project). Includes visual design patterns and hands-on practice exercises. (7.5 total hours). Instructor: Mustafa Ozcelikors.
 
     - name: Learn Onshape for Beginners
-      start: 2024
-      end:
+      start: 2025
+      end: Dec 14, 2025
       organization: Udemy
-      credentialid:
-      credentialurl:
-      credentialname:
+      credentialid: UC-7654b8fd-fdf0-4077-acbe-b476c4b71351
+      credentialurl: https://ude.my/UC-7654b8fd-fdf0-4077-acbe-b476c4b71351
+      credentialname: Udemy Certificate
       details: |
-        Completed practical course on Onshape cloud-based 3D CAD platform, including parametric design and collaborative design workflows for product development.
+        Practical course on Onshape cloud-based 3D CAD platform, including parametric design and collaborative design workflows for product development. (2 total hours). Instructor: Philip Cotton.
+
+    - name: FreeCAD v1.0 2025 Ultimate Beginners Course Extended Version
+      start: 2025
+      end: Dec 1, 2025
+      organization: Udemy
+      credentialid: UC-ab312b29-0b87-4b29-8973-29e7b5a30776
+      credentialurl: https://ude.my/UC-ab312b29-0b87-4b29-8973-29e7b5a30776
+      credentialname: Udemy Certificate
+      details: |
+        Comprehensive introduction to FreeCAD v1.0 for 3D CAD design and parametric modeling. Covers model creation, editing, and design workflows. (1.5 total hours). Instructor: MJ Solutions.
 
 projects:
   title: Key Projects
