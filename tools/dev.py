@@ -475,6 +475,29 @@ def get_current_branch() -> str:
     return result.stdout.strip() if result.returncode == 0 else "unknown"
 
 
+def get_main_branch() -> str:
+    """Get the main branch name (main or master)."""
+    result = subprocess.run(
+        ["git", "rev-parse", "--abbrev-ref", "origin/HEAD"],
+        capture_output=True,
+        text=True,
+        cwd=REPO_ROOT,
+    )
+    if result.returncode == 0:
+        # Format: origin/main or origin/master
+        ref = result.stdout.strip()
+        if "/" in ref:
+            return ref.split("/", 1)[1]
+
+    # Fallback: check what exists locally
+    if branch_exists("main"):
+        return "main"
+    elif branch_exists("master"):
+        return "master"
+    else:
+        return "main"  # Default
+
+
 def branch_exists(branch_name: str) -> bool:
     """Check if a branch exists locally."""
     result = subprocess.run(
@@ -496,14 +519,15 @@ def cmd_feature(args) -> None:
     print_header(f"FEATURE: Creating feature branch '{args.name}'")
 
     branch_name = f"feature/{args.name}"
+    main_branch = get_main_branch()
 
     if branch_exists(branch_name):
         print(f"\n✗ Branch '{branch_name}' already exists")
         sys.exit(1)
 
-    print(f"\n1. Creating branch from 'main'...")
-    run_git(["checkout", "main"], check=True)
-    run_git(["pull", "origin", "main"], check=False)  # Optional, non-fatal
+    print(f"\n1. Creating branch from '{main_branch}'...")
+    run_git(["checkout", main_branch], check=True)
+    run_git(["pull", "origin", main_branch], check=False)  # Optional, non-fatal
 
     print(f"\n2. Creating and switching to '{branch_name}'...")
     run_git(["checkout", "-b", branch_name], check=True)
@@ -519,14 +543,15 @@ def cmd_bugfix(args) -> None:
     print_header(f"BUGFIX: Creating bugfix branch '{args.name}'")
 
     branch_name = f"bugfix/{args.name}"
+    main_branch = get_main_branch()
 
     if branch_exists(branch_name):
         print(f"\n✗ Branch '{branch_name}' already exists")
         sys.exit(1)
 
-    print(f"\n1. Creating branch from 'main'...")
-    run_git(["checkout", "main"], check=True)
-    run_git(["pull", "origin", "main"], check=False)  # Optional, non-fatal
+    print(f"\n1. Creating branch from '{main_branch}'...")
+    run_git(["checkout", main_branch], check=True)
+    run_git(["pull", "origin", main_branch], check=False)  # Optional, non-fatal
 
     print(f"\n2. Creating and switching to '{branch_name}'...")
     run_git(["checkout", "-b", branch_name], check=True)
@@ -560,10 +585,11 @@ def cmd_commit(args) -> None:
     print_header("COMMIT: Creating git commit")
 
     current_branch = get_current_branch()
+    main_branch = get_main_branch()
     print(f"\nCurrent branch: {current_branch}")
 
-    if current_branch in ("main", "master"):
-        print("\n⚠ Warning: You're committing directly to 'main'!")
+    if current_branch in (main_branch, "master", "main"):
+        print(f"\n⚠ Warning: You're committing directly to '{main_branch}'!")
         print("  It's recommended to use feature/bugfix branches.")
         response = input("\nContinue? (yes/no): ").strip().lower()
         if response != "yes":
@@ -583,18 +609,23 @@ def cmd_commit(args) -> None:
 
 
 def cmd_merge(args) -> None:
-    """Merge current branch back to main."""
+    """Merge current branch back to main/master."""
     print_header("MERGE: Merging branch back to main")
 
     current_branch = get_current_branch()
+    main_branch = get_main_branch()
     print(f"\nCurrent branch: {current_branch}")
 
-    if current_branch == "main" or current_branch == "master":
-        print("\n✗ You're already on 'main'. Nothing to merge.")
+    if (
+        current_branch == main_branch
+        or current_branch == "main"
+        or current_branch == "master"
+    ):
+        print(f"\n✗ You're already on '{main_branch}'. Nothing to merge.")
         sys.exit(1)
 
-    if not branch_exists("main"):
-        print("\n✗ Branch 'main' does not exist")
+    if not branch_exists(main_branch):
+        print(f"\n✗ Branch '{main_branch}' does not exist")
         sys.exit(1)
 
     print(f"\n1. Checking for uncommitted changes...")
@@ -614,29 +645,29 @@ def cmd_merge(args) -> None:
     print(f"\n2. Fetching latest from origin...")
     run_git(["fetch", "origin"], check=False)
 
-    print(f"\n3. Switching to 'main'...")
-    run_git(["checkout", "main"], check=True)
+    print(f"\n3. Switching to '{main_branch}'...")
+    run_git(["checkout", main_branch], check=True)
 
-    print(f"\n4. Pulling latest changes from 'main'...")
-    run_git(["pull", "origin", "main"], check=False)
+    print(f"\n4. Pulling latest changes from '{main_branch}'...")
+    run_git(["pull", "origin", main_branch], check=False)
 
-    print(f"\n5. Merging '{current_branch}' into 'main'...")
+    print(f"\n5. Merging '{current_branch}' into '{main_branch}'...")
     result = run_git(
-        ["merge", current_branch, "-m", f"Merge {current_branch} into main"],
+        ["merge", current_branch, "-m", f"Merge {current_branch} into {main_branch}"],
         check=False,
     )
 
     if result.returncode != 0:
         print("\n✗ Merge conflict detected!")
         print("  Please resolve conflicts manually and commit.")
-        print(f"  Then run: git push origin main")
+        print(f"  Then run: git push origin {main_branch}")
         sys.exit(1)
 
     print(f"\n6. Pushing to origin...")
-    run_git(["push", "origin", "main"], check=True)
+    run_git(["push", "origin", main_branch], check=True)
 
     print(f"\n✓ Merge complete!")
-    print(f"   Branch '{current_branch}' has been merged into 'main'")
+    print(f"   Branch '{current_branch}' has been merged into '{main_branch}'")
     print(f"   You can delete the feature branch with:")
     print(f"   git branch -d {current_branch}")
     print()
@@ -646,7 +677,9 @@ def cmd_delete(args) -> None:
     """Delete a local branch."""
     print_header(f"DELETE: Removing branch '{args.branch}'")
 
-    if args.branch == "main" or args.branch == "master":
+    main_branch = get_main_branch()
+
+    if args.branch in (main_branch, "main", "master"):
         print(f"\n✗ Cannot delete '{args.branch}' branch")
         sys.exit(1)
 
@@ -657,7 +690,7 @@ def cmd_delete(args) -> None:
     current_branch = get_current_branch()
     if current_branch == args.branch:
         print(f"\n1. Switching away from '{args.branch}'...")
-        run_git(["checkout", "main"], check=True)
+        run_git(["checkout", main_branch], check=True)
 
     print(f"\n2. Deleting branch '{args.branch}'...")
     force_flag = "-D" if args.force else "-d"
