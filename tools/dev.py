@@ -8,6 +8,7 @@ This script combines multiple development tasks:
   3. Build: Clean build for testing/deployment
   4. Test:  Build + validate links with htmlproofer
   5. Check: Check for broken internal links in posts
+  6. Branch Management: Create/switch/merge feature and bugfix branches
 
 Usage:
   ./tools/dev.py setup                    # Setup mise, Ruby, and gems
@@ -15,6 +16,13 @@ Usage:
   ./tools/dev.py build [--production]    # Build the site
   ./tools/dev.py test                    # Build + run htmlproofer
   ./tools/dev.py check [--dry-run] [--htmlproofer]  # Check internal links
+  ./tools/dev.py feature <name>          # Create feature/<name> branch
+  ./tools/dev.py bugfix <name>           # Create bugfix/<name> branch
+  ./tools/dev.py switch <branch>         # Switch to existing branch
+  ./tools/dev.py commit -m <message>     # Commit changes
+  ./tools/dev.py merge                   # Merge current branch to main
+  ./tools/dev.py delete <branch>         # Delete a local branch
+  ./tools/dev.py status                  # Show git status
 """
 
 import argparse
@@ -453,6 +461,228 @@ def cmd_check(args) -> None:
     print()
 
 
+# ── Branch Management ────────────────────────────────────────────────────────
+
+
+def get_current_branch() -> str:
+    """Get the current git branch name."""
+    result = subprocess.run(
+        ["git", "rev-parse", "--abbrev-ref", "HEAD"],
+        capture_output=True,
+        text=True,
+        cwd=REPO_ROOT,
+    )
+    return result.stdout.strip() if result.returncode == 0 else "unknown"
+
+
+def branch_exists(branch_name: str) -> bool:
+    """Check if a branch exists locally."""
+    result = subprocess.run(
+        ["git", "rev-parse", "--verify", f"refs/heads/{branch_name}"],
+        capture_output=True,
+        cwd=REPO_ROOT,
+    )
+    return result.returncode == 0
+
+
+def run_git(cmd: list[str], check: bool = True) -> subprocess.CompletedProcess:
+    """Run a git command."""
+    print(f"\n$ git {' '.join(cmd)}")
+    return subprocess.run(["git"] + cmd, cwd=REPO_ROOT, check=check)
+
+
+def cmd_feature(args) -> None:
+    """Create and switch to a feature branch."""
+    print_header(f"FEATURE: Creating feature branch '{args.name}'")
+
+    branch_name = f"feature/{args.name}"
+
+    if branch_exists(branch_name):
+        print(f"\n✗ Branch '{branch_name}' already exists")
+        sys.exit(1)
+
+    print(f"\n1. Creating branch from 'main'...")
+    run_git(["checkout", "main"], check=True)
+    run_git(["pull", "origin", "main"], check=False)  # Optional, non-fatal
+
+    print(f"\n2. Creating and switching to '{branch_name}'...")
+    run_git(["checkout", "-b", branch_name], check=True)
+
+    print(f"\n✓ Feature branch created and switched!")
+    print(f"   Branch: {branch_name}")
+    print(f"   Start making changes and commit with: git commit -m 'message'")
+    print()
+
+
+def cmd_bugfix(args) -> None:
+    """Create and switch to a bugfix branch."""
+    print_header(f"BUGFIX: Creating bugfix branch '{args.name}'")
+
+    branch_name = f"bugfix/{args.name}"
+
+    if branch_exists(branch_name):
+        print(f"\n✗ Branch '{branch_name}' already exists")
+        sys.exit(1)
+
+    print(f"\n1. Creating branch from 'main'...")
+    run_git(["checkout", "main"], check=True)
+    run_git(["pull", "origin", "main"], check=False)  # Optional, non-fatal
+
+    print(f"\n2. Creating and switching to '{branch_name}'...")
+    run_git(["checkout", "-b", branch_name], check=True)
+
+    print(f"\n✓ Bugfix branch created and switched!")
+    print(f"   Branch: {branch_name}")
+    print(f"   Start making changes and commit with: git commit -m 'message'")
+    print()
+
+
+def cmd_switch(args) -> None:
+    """Switch to an existing branch."""
+    print_header(f"SWITCH: Switching to branch '{args.branch}'")
+
+    if not branch_exists(args.branch):
+        print(f"\n✗ Branch '{args.branch}' does not exist locally")
+        print("\nAvailable branches:")
+        run_git(["branch"], check=True)
+        sys.exit(1)
+
+    print(f"\n1. Switching to '{args.branch}'...")
+    run_git(["checkout", args.branch], check=True)
+
+    print(f"\n✓ Switched to branch '{args.branch}'")
+    run_git(["status", "--short"], check=False)
+    print()
+
+
+def cmd_commit(args) -> None:
+    """Commit changes with a message."""
+    print_header("COMMIT: Creating git commit")
+
+    current_branch = get_current_branch()
+    print(f"\nCurrent branch: {current_branch}")
+
+    if current_branch in ("main", "master"):
+        print("\n⚠ Warning: You're committing directly to 'main'!")
+        print("  It's recommended to use feature/bugfix branches.")
+        response = input("\nContinue? (yes/no): ").strip().lower()
+        if response != "yes":
+            print("Aborted.")
+            sys.exit(1)
+
+    print(f"\n1. Staging all changes...")
+    run_git(["add", "-A"], check=True)
+
+    print(f"\n2. Creating commit with message...")
+    print(f'   Message: "{args.message}"')
+    run_git(["commit", "-m", args.message], check=True)
+
+    print(f"\n✓ Commit created!")
+    run_git(["log", "-1", "--oneline"], check=False)
+    print()
+
+
+def cmd_merge(args) -> None:
+    """Merge current branch back to main."""
+    print_header("MERGE: Merging branch back to main")
+
+    current_branch = get_current_branch()
+    print(f"\nCurrent branch: {current_branch}")
+
+    if current_branch == "main" or current_branch == "master":
+        print("\n✗ You're already on 'main'. Nothing to merge.")
+        sys.exit(1)
+
+    if not branch_exists("main"):
+        print("\n✗ Branch 'main' does not exist")
+        sys.exit(1)
+
+    print(f"\n1. Checking for uncommitted changes...")
+    result = subprocess.run(
+        ["git", "status", "--porcelain"],
+        capture_output=True,
+        text=True,
+        cwd=REPO_ROOT,
+    )
+    if result.stdout.strip():
+        print("✗ You have uncommitted changes:")
+        print(result.stdout)
+        print("\nCommit your changes first with: ./tools/dev.py commit -m 'message'")
+        sys.exit(1)
+    print("   ✓ Working directory is clean")
+
+    print(f"\n2. Fetching latest from origin...")
+    run_git(["fetch", "origin"], check=False)
+
+    print(f"\n3. Switching to 'main'...")
+    run_git(["checkout", "main"], check=True)
+
+    print(f"\n4. Pulling latest changes from 'main'...")
+    run_git(["pull", "origin", "main"], check=False)
+
+    print(f"\n5. Merging '{current_branch}' into 'main'...")
+    result = run_git(
+        ["merge", current_branch, "-m", f"Merge {current_branch} into main"],
+        check=False,
+    )
+
+    if result.returncode != 0:
+        print("\n✗ Merge conflict detected!")
+        print("  Please resolve conflicts manually and commit.")
+        print(f"  Then run: git push origin main")
+        sys.exit(1)
+
+    print(f"\n6. Pushing to origin...")
+    run_git(["push", "origin", "main"], check=True)
+
+    print(f"\n✓ Merge complete!")
+    print(f"   Branch '{current_branch}' has been merged into 'main'")
+    print(f"   You can delete the feature branch with:")
+    print(f"   git branch -d {current_branch}")
+    print()
+
+
+def cmd_delete(args) -> None:
+    """Delete a local branch."""
+    print_header(f"DELETE: Removing branch '{args.branch}'")
+
+    if args.branch == "main" or args.branch == "master":
+        print(f"\n✗ Cannot delete '{args.branch}' branch")
+        sys.exit(1)
+
+    if not branch_exists(args.branch):
+        print(f"\n✗ Branch '{args.branch}' does not exist")
+        sys.exit(1)
+
+    current_branch = get_current_branch()
+    if current_branch == args.branch:
+        print(f"\n1. Switching away from '{args.branch}'...")
+        run_git(["checkout", "main"], check=True)
+
+    print(f"\n2. Deleting branch '{args.branch}'...")
+    force_flag = "-D" if args.force else "-d"
+    run_git(["branch", force_flag, args.branch], check=True)
+
+    print(f"\n✓ Branch '{args.branch}' has been deleted")
+    print()
+
+
+def cmd_status() -> None:
+    """Show current branch and git status."""
+    print_header("STATUS: Git Repository Status")
+
+    current_branch = get_current_branch()
+    print(f"\nCurrent branch: {current_branch}")
+
+    print(f"\n── Branch list ──\n")
+    run_git(["branch", "-vv"], check=False)
+
+    print(f"\n── Working directory status ──\n")
+    run_git(["status"], check=False)
+
+    print()
+
+
 # ── Main ─────────────────────────────────────────────────────────────────────
 
 
@@ -494,6 +724,29 @@ def main() -> None:
         help="Also run a clean build + htmlproofer",
     )
 
+    # Branch management commands
+    feature_parser = subparsers.add_parser("feature", help="Create feature branch")
+    feature_parser.add_argument("name", help="Feature name (e.g., 'add-dark-mode')")
+
+    bugfix_parser = subparsers.add_parser("bugfix", help="Create bugfix branch")
+    bugfix_parser.add_argument("name", help="Bug name (e.g., 'fix-link-colors')")
+
+    switch_parser = subparsers.add_parser("switch", help="Switch to existing branch")
+    switch_parser.add_argument("branch", help="Branch name")
+
+    commit_parser = subparsers.add_parser("commit", help="Commit staged changes")
+    commit_parser.add_argument("-m", "--message", required=True, help="Commit message")
+
+    merge_parser = subparsers.add_parser("merge", help="Merge current branch to main")
+
+    delete_parser = subparsers.add_parser("delete", help="Delete a local branch")
+    delete_parser.add_argument("branch", help="Branch name to delete")
+    delete_parser.add_argument(
+        "-f", "--force", action="store_true", help="Force delete (use -D instead of -d)"
+    )
+
+    status_parser = subparsers.add_parser("status", help="Show git status")
+
     args = parser.parse_args()
 
     if not args.command:
@@ -511,6 +764,20 @@ def main() -> None:
         cmd_test(args)
     elif args.command == "check":
         cmd_check(args)
+    elif args.command == "feature":
+        cmd_feature(args)
+    elif args.command == "bugfix":
+        cmd_bugfix(args)
+    elif args.command == "switch":
+        cmd_switch(args)
+    elif args.command == "commit":
+        cmd_commit(args)
+    elif args.command == "merge":
+        cmd_merge(args)
+    elif args.command == "delete":
+        cmd_delete(args)
+    elif args.command == "status":
+        cmd_status()
 
 
 if __name__ == "__main__":
