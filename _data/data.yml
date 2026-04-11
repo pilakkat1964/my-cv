@@ -1,297 +1,434 @@
-#
-# Be aware that even a small syntax error here can lead to failures in output.
-#
-
 sidebar:
-  position: left # position of the sidebar : left or right
-  about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
-  education: True # set to False if you want education in main section instead of in sidebar
-
-  # Profile information
+  position: left
+  about: false
+  education: true
   name: Santhosh Kumar Pilakkat
   tagline: Senior Systems Architect | Wireless Communications & IIoT Specialist
-  avatar: profile.jpg #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
-
-  # Sidebar links
+  avatar: profile.jpg
   email: pilakkat1964@gmail.com
   phone: +65-91867150
   timezone: Asia/Singapore
   citizenship: Singapore
   website: https://pilakkat.mywire.org
   linkedin: santhosh-kumar-pilakkat-26858117
-  xing:
+  xing: null
   github: pilakkat1964
-  telegram: # add your nickname without '@' sign
-  gitlab:
-  bitbucket:
-  bluesky: # Specify your full Bluesky handle
-  twitter:
-  stack-overflow: # Number/Username, e.g. 123456/alandoe
-  codewars:
-  goodreads: # Number-Username, e.g. 123456-alandoe
-  mastodon: # Please include your full Mastodon link here.
-  hackerrank: # Please provide your HackerRank username.
-  leetcode: # Please provide your LeetCode username.
-  pdf: # Add a PDF link here if you want to include a PDF custom version in your resume.
-
+  telegram: null
+  gitlab: null
+  bitbucket: null
+  bluesky: null
+  twitter: null
+  stack-overflow: null
+  codewars: null
+  goodreads: null
+  mastodon: null
+  hackerrank: null
+  leetcode: null
+  pdf: null
   languages:
     title: Languages
     info:
-      - idiom: English
-        level: Professional Working Proficiency
-      - idiom: Malayalam
-        level: Native
-
+    - idiom: English
+      level: Professional Working Proficiency
+    - idiom: Malayalam
+      level: Native
   interests:
     title: Engagement Models
     info:
-      - item: "Strategic Advisory (10-20 hrs/week)"
-        link:
-      - item: "Full-time Contracts (40+ hrs/week)"
-        link:
-      - item: "Project-based Engagements"
-        link:
-      - item: "Available: Singapore & Global (Remote)"
-        link:
-
+    - item: Strategic Advisory (10-20 hrs/week)
+      link: null
+    - item: Full-time Contracts (40+ hrs/week)
+      link: null
+    - item: Project-based Engagements
+      link: null
+    - item: 'Available: Singapore & Global (Remote)'
+      link: null
 career-profile:
   title: Career Profile
-  summary: |
-    **Senior Systems Architect & Strategic Consultant** with 38+ years of proven expertise in architecting mission-critical systems across telecommunications, defence-grade SDR platforms, and national-scale R&D programs. Available for part-time advisory, full-time contracts, and project-based engagements globally and in Singapore.
+  summary: '**Senior Systems Architect & Strategic Consultant** with 38+ years of
+    proven expertise in architecting mission-critical systems across telecommunications,
+    defence-grade SDR platforms, and national-scale R&D programs. Available for part-time
+    advisory, full-time contracts, and project-based engagements globally and in Singapore.
+
 
     **Consultant Value Proposition:**
-    - **30+ years** architecting complex wireless & embedded systems (5G, LTE, WCDMA, SDR, FPGA)
-    - **Deep Singapore/Asia Market Knowledge:** A*STAR ecosystem, defence collaboration, GovTech programs, smart manufacturing
-    - **End-to-End Expertise:** System architecture (INCOSE SysML), embedded Linux/RTOS, FPGA design, IIoT platforms (RAMI 4.0, IIRA)
-    - **Proven Track Record:** Led multi-disciplinary teams (16+ engineers), managed global programs, delivered field-tested systems
-    - **Current Focus:** Industry 4.0 digital transformation, private 5G/TSN solutions, secure communications architecture
-    - **Engagement Models:** Strategic advisory (10-20 hrs/week), full-time contracts, or project-based deliverables
 
+    - **30+ years** architecting complex wireless & embedded systems (5G, LTE, WCDMA,
+    SDR, FPGA)
+
+    - **Deep Singapore/Asia Market Knowledge:** A*STAR ecosystem, defence collaboration,
+    GovTech programs, smart manufacturing
+
+    - **End-to-End Expertise:** System architecture (INCOSE SysML), embedded Linux/RTOS,
+    FPGA design, IIoT platforms (RAMI 4.0, IIRA)
+
+    - **Proven Track Record:** Led multi-disciplinary teams (16+ engineers), managed
+    global programs, delivered field-tested systems
+
+    - **Current Focus:** Industry 4.0 digital transformation, private 5G/TSN solutions,
+    secure communications architecture
+
+    - **Engagement Models:** Strategic advisory (10-20 hrs/week), full-time contracts,
+    or project-based deliverables
+
+    '
 education:
   title: Education
   info:
-    - degree: M.Tech in Software Engineering
-      university: National University of Singapore (Institute of System Sciences)
-      time: 2003 - 2005
-      details: |
-        Specialized in Software Engineering, Project Management, Software Reliability, and Evolutionary Computing.
-    - degree: B.Tech in Electronics Engineering
-      university: National Institute of Technology (NIT), Calicut, India
-      time: 1982 - 1987
-      details: |
-        Specialized in Electronics Engineering, Electrical Technology, Analog & Digital Communication, Radiation & Propagation, Microwave Electronics, and Semiconductor Physics & Devices.
+  - degree: M.Tech in Software Engineering
+    university: National University of Singapore (Institute of System Sciences)
+    time: 2003 - 2005
+    details: 'Specialized in Software Engineering, Project Management, Software Reliability,
+      and Evolutionary Computing.
 
+      '
+  - degree: B.Tech in Electronics Engineering
+    university: National Institute of Technology (NIT), Calicut, India
+    time: 1982 - 1987
+    details: 'Specialized in Electronics Engineering, Electrical Technology, Analog
+      & Digital Communication, Radiation & Propagation, Microwave Electronics, and
+      Semiconductor Physics & Devices.
+
+      '
 experiences:
   title: Professional Experience
   info:
-    - role: Senior Principal Research Engineer
-      time: July 2000 - March 2025
-      company: Institute for Infocomm Research (I2R), A*STAR, Singapore
-      details: |
-        Led defence-relevant SDR and communication system architectures. Delivered IIoT platforms aligned with Singapore smart manufacturing initiatives. Acted as technical advisor across multi-stakeholder programs. Designed secure wireless and hybrid connectivity systems (LTE/5G readiness).
+  - role: Senior Principal Research Engineer
+    time: July 2000 - March 2025
+    company: Institute for Infocomm Research (I2R), A*STAR, Singapore
+    details: 'Led defence-relevant SDR and communication system architectures. Delivered
+      IIoT platforms aligned with Singapore smart manufacturing initiatives. Acted
+      as technical advisor across multi-stakeholder programs. Designed secure wireless
+      and hybrid connectivity systems (LTE/5G readiness).
 
-        **Consultant/Contractor Readiness:** Experience managing multi-agency engagements, delivering advisory to government and industry partners, leading teams across organizational boundaries, and executing project-based technical architecture work for critical programs.
 
-        **Key Programs:**
-        - **5G for Advanced Manufacturing & Smart Urban Systems Program (System Architect):** Served as the System Architect for the A*STAR inter-institute program "5G for Advanced Manufacturing and Smart Urban Systems" (5GAMSUS). Led the architecture for industrial 5G solutions, defining use cases and technical requirements for private 5G networks in manufacturing environments.
-        - **Industrial 5G & TSN Engagements:** Led subsequent industry engagement projects developing solutions for 5G and Time-Sensitive Networking (TSN) over 5G for industrial automation, enabling deterministic, low-latency wireless communication for smart factories.
-        - **Wireless for Knowledge Based Manufacturing (KBM):** Technical advisor for a joint project with ARTC to develop a Smart Manufacturing/Industry 4.0 IIoT connectivity solution (wireless + wireline) for a major aircraft engine manufacturer. Incorporated Private-LTE and 5G, aligning with RAMI 4.0 and IIC IIRA.
-        - **SDR based C-band Data Link for Tactical UAVs (Project Manager & Technical Lead):** Adapted a custom SDR modem to operate in the C-band (4.5-6GHz) for defence UAVs. Designed and implemented the critical time-domain equalizer.
-        - **SDR based Data Link for Tactical UAVs  (Project Manager & Technical Lead):** Developed a custom OFDM-based SDR modem for military UAVs (VHF/UHF/S-band). Incorporated adaptive modulation, frequency hopping, and AES256 encryption. Successfully field-tested in Australia.
-        - **Reconfigurable Platform for Avionics & Communication (Technical Lead & PM):** Developed a Policy-Driven SDR platform for avionics (A*STAR Aerospace Program with Airbus). Leveraged Xilinx Virtex-5 Partial Run-time Reconfiguration.
-        - **SDR based Multi-channel Intelsat Modem (Project Manager):** Developed a JTRS SCA-based SDR waveform for INTELSAT Satcomm links for a large local entity (LLE).
-        - **Multi-mode SDR Terminal (Project & Technical Lead):** Led a team of ~16 engineers (collaboration with DSO) to develop a multi-mode terminal (WCDMA + 802.11a OFDM). Heavy use of MDD/MDA (Telelogic SDT, Rhapsody UML2).
+      **Consultant/Contractor Readiness:** Experience managing multi-agency engagements,
+      delivering advisory to government and industry partners, leading teams across
+      organizational boundaries, and executing project-based technical architecture
+      work for critical programs.
 
-    - role: Senior Staff Engineer
-      time: Dec 1995 - July 2000
-      company: Motorola Electronics Pte. Ltd, Singapore (Global Software Division / Corporate Research & Technology Centre)
-      details: |
-        - **Cdma2000 1x Trial System (System Architect):** One of three system architects for a technology demonstrator for Sprint PCS inc. Defined system feature set, high-level architecture, and interface control documents. Coordinated cross-functional global teams for major vendor programs.
-        - **Cdma2000 1x Trial System BTS (Technical Lead):** Technical lead for BTS subsystems developed in Singapore.
-        - **Onyx V42bis Library:** Developed an assembly-optimized V42bis compression library for Motorola 56300 DSP.
-        - **FLEX & POCSAG Pager Prototypes:** Developed complete hardware/software prototypes using HC11 MCU.
-        - **Software Quality & Systems Engineering:** As part of the first CMMI Level 5 qualified team in Singapore, developed deep understanding of the Software development lifecycle at the highest maturity level. Developed comprehensive test automation solution for automated test execution and coverage analysis for the hand optimised DSP assembly libraries.
 
-    - role: R&D Engineer
-      time: Dec 1993 - Dec 1995
-      company: PCI Pte. Ltd., Singapore
-      details: |
-        - **GSM Handset Development:** As part of software team, developed SIM handling software subsystem for Singapore's first GSM R&D project. As part of the Systems Engineering team, working with ADI & TTP Ltd., helped in fleshing out the design and testing approaches for the handset prototype. Developed a POCASAG page virtual platform based on Visual Basic to help accelerate the development of pager product line in a parallel effort.
+      **Key Programs:**
 
-    - role: Engineer Executive
-      time: Sept 1988 - Dec 1993
-      company: Indian Telephone Industries Ltd. (ITI), Bangalore, India (Switching R&D)
-      details: |
-        - **Large Digital Branch Exchange:** Developed custom RTOS (REALX-86), HDLC protocol implementation, main call processing software, HDLC Serial communication hardware and implemented a 1+1 Hot Standby Redundancy Scheme with zero call loss on fail-over.
+      - **5G for Advanced Manufacturing & Smart Urban Systems Program (System Architect):**
+      Served as the System Architect for the A*STAR inter-institute program "5G for
+      Advanced Manufacturing and Smart Urban Systems" (5GAMSUS). Led the architecture
+      for industrial 5G solutions, defining use cases and technical requirements for
+      private 5G networks in manufacturing environments.
 
-    - role: Scientific Officer - SC
-      time: Dec 1986 - Sept 1988
-      company: TIFR / SAMEER, Mumbai, India (Microwave Oscillators & Amplifiers)
-      details: |
-        - Developed PIN diode switches and VHF power amplifiers for the MST Radar.
-        - Developed TCXO, PLLs, VCXOs, and VHF/UHF filters for a Satellite News Dissemination System.
+      - **Industrial 5G & TSN Engagements:** Led subsequent industry engagement projects
+      developing solutions for 5G and Time-Sensitive Networking (TSN) over 5G for
+      industrial automation, enabling deterministic, low-latency wireless communication
+      for smart factories.
 
+      - **Wireless for Knowledge Based Manufacturing (KBM):** Technical advisor for
+      a joint project with ARTC to develop a Smart Manufacturing/Industry 4.0 IIoT
+      connectivity solution (wireless + wireline) for a major aircraft engine manufacturer.
+      Incorporated Private-LTE and 5G, aligning with RAMI 4.0 and IIC IIRA.
+
+      - **SDR based C-band Data Link for Tactical UAVs (Project Manager & Technical
+      Lead):** Adapted a custom SDR modem to operate in the C-band (4.5-6GHz) for
+      defence UAVs. Designed and implemented the critical time-domain equalizer.
+
+      - **SDR based Data Link for Tactical UAVs  (Project Manager & Technical Lead):**
+      Developed a custom OFDM-based SDR modem for military UAVs (VHF/UHF/S-band).
+      Incorporated adaptive modulation, frequency hopping, and AES256 encryption.
+      Successfully field-tested in Australia.
+
+      - **Reconfigurable Platform for Avionics & Communication (Technical Lead & PM):**
+      Developed a Policy-Driven SDR platform for avionics (A*STAR Aerospace Program
+      with Airbus). Leveraged Xilinx Virtex-5 Partial Run-time Reconfiguration.
+
+      - **SDR based Multi-channel Intelsat Modem (Project Manager):** Developed a
+      JTRS SCA-based SDR waveform for INTELSAT Satcomm links for a large local entity
+      (LLE).
+
+      - **Multi-mode SDR Terminal (Project & Technical Lead):** Led a team of ~16
+      engineers (collaboration with DSO) to develop a multi-mode terminal (WCDMA +
+      802.11a OFDM). Heavy use of MDD/MDA (Telelogic SDT, Rhapsody UML2).
+
+      '
+  - role: Senior Staff Engineer
+    time: Dec 1995 - July 2000
+    company: Motorola Electronics Pte. Ltd, Singapore (Global Software Division /
+      Corporate Research & Technology Centre)
+    details: '- **Cdma2000 1x Trial System (System Architect):** One of three system
+      architects for a technology demonstrator for Sprint PCS inc. Defined system
+      feature set, high-level architecture, and interface control documents. Coordinated
+      cross-functional global teams for major vendor programs.
+
+      - **Cdma2000 1x Trial System BTS (Technical Lead):** Technical lead for BTS
+      subsystems developed in Singapore.
+
+      - **Onyx V42bis Library:** Developed an assembly-optimized V42bis compression
+      library for Motorola 56300 DSP.
+
+      - **FLEX & POCSAG Pager Prototypes:** Developed complete hardware/software prototypes
+      using HC11 MCU.
+
+      - **Software Quality & Systems Engineering:** As part of the first CMMI Level
+      5 qualified team in Singapore, developed deep understanding of the Software
+      development lifecycle at the highest maturity level. Developed comprehensive
+      test automation solution for automated test execution and coverage analysis
+      for the hand optimised DSP assembly libraries.
+
+      '
+  - role: R&D Engineer
+    time: Dec 1993 - Dec 1995
+    company: PCI Pte. Ltd., Singapore
+    details: '- **GSM Handset Development:** As part of software team, developed SIM
+      handling software subsystem for Singapore''s first GSM R&D project. As part
+      of the Systems Engineering team, working with ADI & TTP Ltd., helped in fleshing
+      out the design and testing approaches for the handset prototype. Developed a
+      POCASAG page virtual platform based on Visual Basic to help accelerate the development
+      of pager product line in a parallel effort.
+
+      '
+  - role: Engineer Executive
+    time: Sept 1988 - Dec 1993
+    company: Indian Telephone Industries Ltd. (ITI), Bangalore, India (Switching R&D)
+    details: '- **Large Digital Branch Exchange:** Developed custom RTOS (REALX-86),
+      HDLC protocol implementation, main call processing software, HDLC Serial communication
+      hardware and implemented a 1+1 Hot Standby Redundancy Scheme with zero call
+      loss on fail-over.
+
+      '
+  - role: Scientific Officer - SC
+    time: Dec 1986 - Sept 1988
+    company: TIFR / SAMEER, Mumbai, India (Microwave Oscillators & Amplifiers)
+    details: '- Developed PIN diode switches and VHF power amplifiers for the MST
+      Radar.
+
+      - Developed TCXO, PLLs, VCXOs, and VHF/UHF filters for a Satellite News Dissemination
+      System.
+
+      '
 certifications:
   title: Awards, Certifications & Continuing Education
   list:
-    - name: EURASIP Best Paper Award
-      start: 2010
-      end:
-      organization: EURASIP
-      credentialid:
-      credentialurl:
-      credentialname:
-      details: |
-        Awarded for the paper "Reconfigurable Signal Processing and hardware Architecture for Broadband Wireless Communications" in the Journal on Wireless Communications and Networking, Volume 2005.
+  - name: EURASIP Best Paper Award
+    start: 2010
+    end: null
+    organization: EURASIP
+    credentialid: null
+    credentialurl: null
+    credentialname: null
+    details: 'Awarded for the paper "Reconfigurable Signal Processing and hardware
+      Architecture for Broadband Wireless Communications" in the Journal on Wireless
+      Communications and Networking, Volume 2005.
 
-    - name: Rust - The Complete Developer's Guide
-      start: 2025
-      end: May 31, 2025
-      organization: Udemy
-      credentialid: UC-6e52b3ff-a598-4a42-bccd-28ce8676676b
-      credentialurl: https://ude.my/UC-6e52b3ff-a598-4a42-bccd-28ce8676676b
-      credentialname: Udemy Certificate
-      details: |
-        Comprehensive course on Rust programming language and systems development. Covers ownership, borrowing, pattern matching, and advanced language features. (10 total hours). Instructor: Stephen Grider.
+      '
+  - name: Rust - The Complete Developer's Guide
+    start: 2025
+    end: May 31, 2025
+    organization: Udemy
+    credentialid: UC-6e52b3ff-a598-4a42-bccd-28ce8676676b
+    credentialurl: https://ude.my/UC-6e52b3ff-a598-4a42-bccd-28ce8676676b
+    credentialname: Udemy Certificate
+    details: 'Comprehensive course on Rust programming language and systems development.
+      Covers ownership, borrowing, pattern matching, and advanced language features.
+      (10 total hours). Instructor: Stephen Grider.
 
-    - name: Kotlin for Beginners - Learn Programming With Kotlin
-      start: 2025
-      end: Dec 2, 2025
-      organization: Udemy
-      credentialid: UC-e2351a67-a5c4-4464-ab9f-12378a9b859e
-      credentialurl: https://ude.my/UC-e2351a67-a5c4-4464-ab9f-12378a9b859e
-      credentialname: Udemy Certificate
-      details: |
-        Comprehensive course on Kotlin programming language, covering modern language features and best practices for mobile and backend application development. (6.5 total hours). Instructor: Peter Sommerhoff.
+      '
+  - name: Kotlin for Beginners - Learn Programming With Kotlin
+    start: 2025
+    end: Dec 2, 2025
+    organization: Udemy
+    credentialid: UC-e2351a67-a5c4-4464-ab9f-12378a9b859e
+    credentialurl: https://ude.my/UC-e2351a67-a5c4-4464-ab9f-12378a9b859e
+    credentialname: Udemy Certificate
+    details: 'Comprehensive course on Kotlin programming language, covering modern
+      language features and best practices for mobile and backend application development.
+      (6.5 total hours). Instructor: Peter Sommerhoff.
 
-    - name: Visual Embedded Android (AOSP) with Drawings and Practice
-      start: 2025
-      end: Nov 21, 2025
-      organization: Udemy
-      credentialid: UC-97e3426e-fa7c-4c72-b2f7-069012773587
-      credentialurl: https://ude.my/UC-97e3426e-fa7c-4c72-b2f7-069012773587
-      credentialname: Udemy Certificate
-      details: |
-        Practical course on Android embedded systems development (AOSP - Android Open Source Project). Includes visual design patterns and hands-on practice exercises. (7.5 total hours). Instructor: Mustafa Ozcelikors.
+      '
+  - name: Visual Embedded Android (AOSP) with Drawings and Practice
+    start: 2025
+    end: Nov 21, 2025
+    organization: Udemy
+    credentialid: UC-97e3426e-fa7c-4c72-b2f7-069012773587
+    credentialurl: https://ude.my/UC-97e3426e-fa7c-4c72-b2f7-069012773587
+    credentialname: Udemy Certificate
+    details: 'Practical course on Android embedded systems development (AOSP - Android
+      Open Source Project). Includes visual design patterns and hands-on practice
+      exercises. (7.5 total hours). Instructor: Mustafa Ozcelikors.
 
-    - name: Learn Onshape for Beginners
-      start: 2025
-      end: Dec 14, 2025
-      organization: Udemy
-      credentialid: UC-7654b8fd-fdf0-4077-acbe-b476c4b71351
-      credentialurl: https://ude.my/UC-7654b8fd-fdf0-4077-acbe-b476c4b71351
-      credentialname: Udemy Certificate
-      details: |
-        Practical course on Onshape cloud-based 3D CAD platform, including parametric design and collaborative design workflows for product development. (2 total hours). Instructor: Philip Cotton.
+      '
+  - name: Learn Onshape for Beginners
+    start: 2025
+    end: Dec 14, 2025
+    organization: Udemy
+    credentialid: UC-7654b8fd-fdf0-4077-acbe-b476c4b71351
+    credentialurl: https://ude.my/UC-7654b8fd-fdf0-4077-acbe-b476c4b71351
+    credentialname: Udemy Certificate
+    details: 'Practical course on Onshape cloud-based 3D CAD platform, including parametric
+      design and collaborative design workflows for product development. (2 total
+      hours). Instructor: Philip Cotton.
 
-    - name: FreeCAD v1.0 2025 Ultimate Beginners Course Extended Version
-      start: 2025
-      end: Dec 1, 2025
-      organization: Udemy
-      credentialid: UC-ab312b29-0b87-4b29-8973-29e7b5a30776
-      credentialurl: https://ude.my/UC-ab312b29-0b87-4b29-8973-29e7b5a30776
-      credentialname: Udemy Certificate
-      details: |
-        Comprehensive introduction to FreeCAD v1.0 for 3D CAD design and parametric modeling. Covers model creation, editing, and design workflows. (1.5 total hours). Instructor: MJ Solutions.
+      '
+  - name: FreeCAD v1.0 2025 Ultimate Beginners Course Extended Version
+    start: 2025
+    end: Dec 1, 2025
+    organization: Udemy
+    credentialid: UC-ab312b29-0b87-4b29-8973-29e7b5a30776
+    credentialurl: https://ude.my/UC-ab312b29-0b87-4b29-8973-29e7b5a30776
+    credentialname: Udemy Certificate
+    details: 'Comprehensive introduction to FreeCAD v1.0 for 3D CAD design and parametric
+      modeling. Covers model creation, editing, and design workflows. (1.5 total hours).
+      Instructor: MJ Solutions.
 
+      '
+  - name: Neural Networks and Deep Learning
+    start: 2017
+    end: October 10, 2017
+    organization: Coursera (DeepLearning.AI)
+    credentialid: UZPYBVHC7V8J
+    credentialurl: https://www.coursera.org/account/accomplishments/verify/UZPYBVHC7V8J
+    credentialname: Coursera Certificate
+    details: 'Comprehensive course on neural network fundamentals, deep learning architectures,
+      and practical implementation. Covers CNNs, RNNs, activation functions, and optimization
+      techniques. (24 total hours). Rating: 4.9/5 (123,708 ratings).'
+  - name: 'Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and
+      Optimization'
+    start: 2017
+    end: October 19, 2017
+    organization: Coursera (DeepLearning.AI)
+    credentialid: 3VY8XDF42J37
+    credentialurl: https://www.coursera.org/account/accomplishments/verify/3VY8XDF42J37
+    credentialname: Coursera Certificate
+    details: 'Advanced course on optimizing deep neural networks. Covers hyperparameter
+      tuning, regularization techniques, batch normalization, and TensorFlow implementation.
+      (23 total hours). Rating: 4.9/5 (63,519 ratings).'
+  - name: Structuring Machine Learning Projects
+    start: 2017
+    end: October 22, 2017
+    organization: Coursera (DeepLearning.AI)
+    credentialid: YNRG4BJUVMVG
+    credentialurl: https://www.coursera.org/account/accomplishments/verify/YNRG4BJUVMVG
+    credentialname: Coursera Certificate
+    details: 'Practical course on machine learning project management, strategy, and
+      best practices. Covers performance optimization, debugging approaches, and ML
+      operations. (6 total hours). Rating: 4.8/5 (50,143 ratings).'
+  - name: Generative AI with Large Language Models
+    start: 2026
+    end: February 2, 2026
+    organization: Coursera (DeepLearning.AI)
+    credentialid: WZZG6X4BLQ3R
+    credentialurl: https://www.coursera.org/account/accomplishments/verify/WZZG6X4BLQ3R
+    credentialname: Coursera Certificate
+    details: 'Cutting-edge course on generative AI and large language models. Covers
+      LLM architectures, prompt engineering, model deployment, responsible AI, and
+      practical applications using AWS AI tools. (16 total hours). Rating: 4.8/5 (3,594
+      ratings).'
 projects:
   title: Key Projects
-  intro: |
-    Selected projects and industry engagements, focusing on SDR, IIoT, wired, wireline and secure communications.
+  intro: 'Selected projects and industry engagements, focusing on SDR, IIoT, wired,
+    wireline and secure communications.
+
+    '
   assignments:
-    - title: 5G for Advanced Manufacturing & Smart Urban Systems
-      link:
-      tagline: "System Architect for A*STAR inter-institute program. Architected industrial 5G solutions for manufacturing and urban systems, defining technical requirements for private 5G networks."
-
-    - title: TSN over 5G for Industrial Automation
-      link:
-      tagline: "Led industry engagements developing deterministic, low-latency wireless communication solutions combining Time-Sensitive Networking (TSN) with 5G for smart factory automation."
-
-    - title: Defence SDR Modem for UAV
-      link:
-      tagline: "Project Manager & Technical Lead for custom OFDM-based SDR modem for military UAVs. Featured adaptive modulation, frequency hopping, AES256 encryption. Successfully field-tested in Australia."
-
-    - title: Reconfigurable Platform for Avionics & Communication
-      link:
-      tagline: "Technical Lead & PM for policy-driven SDR platform under A*STAR's Aerospace Program (Airbus sponsored). Leveraged Xilinx Virtex-5 Partial Reconfiguration."
-
-    - title: Multi-mode SDR Terminal
-      link:
-      tagline: "Led team of 16 engineers (I2R, with Defense collaborator) to develop multi-mode terminal (WCDMA + 802.11a). Employed MDD/MDA with Rhapsody UML2 and Telelogic SDT."
-
-    - title: Cdma2000 1x Trial System
-      link:
-      tagline: "Part of the 3 member, corporate-wide System Architecture for Motorola's Cdma2000-1X technology demonstrator and for trial with Sprint PCS Inc. Coordinated a global team to define system architecture and feature set; deputed to Cellular Infrastructure Group headquarters at Arlington Heights, Chicago."
-
+  - title: 5G for Advanced Manufacturing & Smart Urban Systems
+    link: null
+    tagline: System Architect for A*STAR inter-institute program. Architected industrial
+      5G solutions for manufacturing and urban systems, defining technical requirements
+      for private 5G networks.
+  - title: TSN over 5G for Industrial Automation
+    link: null
+    tagline: Led industry engagements developing deterministic, low-latency wireless
+      communication solutions combining Time-Sensitive Networking (TSN) with 5G for
+      smart factory automation.
+  - title: Defence SDR Modem for UAV
+    link: null
+    tagline: Project Manager & Technical Lead for custom OFDM-based SDR modem for
+      military UAVs. Featured adaptive modulation, frequency hopping, AES256 encryption.
+      Successfully field-tested in Australia.
+  - title: Reconfigurable Platform for Avionics & Communication
+    link: null
+    tagline: Technical Lead & PM for policy-driven SDR platform under A*STAR's Aerospace
+      Program (Airbus sponsored). Leveraged Xilinx Virtex-5 Partial Reconfiguration.
+  - title: Multi-mode SDR Terminal
+    link: null
+    tagline: Led team of 16 engineers (I2R, with Defense collaborator) to develop
+      multi-mode terminal (WCDMA + 802.11a). Employed MDD/MDA with Rhapsody UML2 and
+      Telelogic SDT.
+  - title: Cdma2000 1x Trial System
+    link: null
+    tagline: Part of the 3 member, corporate-wide System Architecture for Motorola's
+      Cdma2000-1X technology demonstrator and for trial with Sprint PCS Inc. Coordinated
+      a global team to define system architecture and feature set; deputed to Cellular
+      Infrastructure Group headquarters at Arlington Heights, Chicago.
 oss:
   title: Technical Expertise
-  intro: |
-    Core competencies in systems architecture, embedded systems, and wireless & wireline communications.
-  contributions:
-    - title: System Architecture & MBSE
-      tagline: "INCOSE SysML/UML, IBM Rhapsody, Sparx Enterprise Architect, Model-Driven Development (MDD)"
-    - title: Wireless Comms & SDR
-      tagline: "5G, LTE, WCDMA, CDMA2000, OFDM, Private 5G, TSN over 5G, Adaptive Modulation, AES256, JTRS SCA"
-    - title: FPGA & Embedded Systems
-      tagline: "Xilinx Zynq/UltraScale/Virtex, VHDL/Verilog/SystemC, Partial Reconfiguration, PCIe, AXI DMA, Verification"
-    - title: IIoT & Smart Manufacturing
-      tagline: "RAMI 4.0, IIC IIRA, Private LTE, Time-Sensitive Networking (TSN), Industrial Analytics"
-    - title: Software & OS
-      tagline: "Embedded Linux, RTOS (VxWorks, FreeRTOS, Custom), Kernel/Driver Development, C/C++, Python, Rust"
+  intro: 'Core competencies in systems architecture, embedded systems, and wireless
+    & wireline communications.
 
+    '
+  contributions:
+  - title: System Architecture & MBSE
+    tagline: INCOSE SysML/UML, IBM Rhapsody, Sparx Enterprise Architect, Model-Driven
+      Development (MDD)
+  - title: Wireless Comms & SDR
+    tagline: 5G, LTE, WCDMA, CDMA2000, OFDM, Private 5G, TSN over 5G, Adaptive Modulation,
+      AES256, JTRS SCA
+  - title: FPGA & Embedded Systems
+    tagline: Xilinx Zynq/UltraScale/Virtex, VHDL/Verilog/SystemC, Partial Reconfiguration,
+      PCIe, AXI DMA, Verification
+  - title: IIoT & Smart Manufacturing
+    tagline: RAMI 4.0, IIC IIRA, Private LTE, Time-Sensitive Networking (TSN), Industrial
+      Analytics
+  - title: Software & OS
+    tagline: Embedded Linux, RTOS (VxWorks, FreeRTOS, Custom), Kernel/Driver Development,
+      C/C++, Python, Rust
 publications:
   title: Publications & Research Impact
-  intro: |
-    Selected peer-reviewed publications and conference papers. Full publication record available on [Google Scholar](https://scholar.google.com/citations?user=santhosh-kumar-pilakkat) (search "Santhosh Kumar Pilakkat").
-  papers:
-    - title: "Reconfigurable Signal Processing and hardware Architecture for Broadband Wireless Communications"
-      link:
-      authors: "Ying-Chang Liang, Sayed Naveen, Santhosh K Pilakkat, and Ashok K. Marath"
-      conference: "Journal on Wireless Communications and Networking, Volume 2005, Pages 323-332. (Winner: EURASIP Best Paper Award 2010)"
+  intro: 'Selected peer-reviewed publications and conference papers. Full publication
+    record available on [Google Scholar](https://scholar.google.com/citations?user=santhosh-kumar-pilakkat)
+    (search "Santhosh Kumar Pilakkat").
 
+    '
+  papers:
+  - title: Reconfigurable Signal Processing and hardware Architecture for Broadband
+      Wireless Communications
+    link: null
+    authors: Ying-Chang Liang, Sayed Naveen, Santhosh K Pilakkat, and Ashok K. Marath
+    conference: 'Journal on Wireless Communications and Networking, Volume 2005, Pages
+      323-332. (Winner: EURASIP Best Paper Award 2010)'
 recommendations:
   title: Recommendations
   list:
-    - person: Industry Collaborator (Aerospace)
-      email:
-      phone:
-      role: Technical Partner (LLE)
-      recommendation: |
-        "Santhosh's technical leadership on the GALLIUM project was exceptional. He delivered a complex SDR modem that met all our UAV communication requirements, including successful field tests in Australia."
-    - person: A*STAR Program Director
-      email:
-      phone:
-      role: Research Program Manager
-      recommendation: |
-        "A true systems architect with deep expertise in both wireless communications and industrial automation. His work on the 5GAMSUS program was foundational to our Industry 4.0 strategy."
+  - person: Industry Collaborator (Aerospace)
+    email: null
+    phone: null
+    role: Technical Partner (LLE)
+    recommendation: '"Santhosh''s technical leadership on the GALLIUM project was
+      exceptional. He delivered a complex SDR modem that met all our UAV communication
+      requirements, including successful field tests in Australia."
 
+      '
+  - person: A*STAR Program Director
+    email: null
+    phone: null
+    role: Research Program Manager
+    recommendation: '"A true systems architect with deep expertise in both wireless
+      communications and industrial automation. His work on the 5GAMSUS program was
+      foundational to our Industry 4.0 strategy."
+
+      '
 skills:
   title: Core Competencies
-
   toolset:
-    - name: System Architecture & MBSE
-      level: 95%
-
-    - name: Wireless (5G/LTE/SDR)
-      level: 95%
-
-    - name: Embedded Linux & RTOS
-      level: 90%
-
-    - name: FPGA (Xilinx, VHDL/Verilog)
-      level: 90%
-
-    - name: IIoT & Industry 4.0
-      level: 90%
-
-    - name: C/C++/Python
-      level: 85%
-
-    - name: Rust/Java/JavaScript
-      level: 65%
-
-footer:
-#
-#footer: >
-#  Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
-
+  - name: System Architecture & MBSE
+    level: 95%
+  - name: Wireless (5G/LTE/SDR)
+    level: 95%
+  - name: Embedded Linux & RTOS
+    level: 90%
+  - name: FPGA (Xilinx, VHDL/Verilog)
+    level: 90%
+  - name: IIoT & Industry 4.0
+    level: 90%
+  - name: C/C++/Python
+    level: 85%
+  - name: Rust/Java/JavaScript
+    level: 65%
+footer: null
